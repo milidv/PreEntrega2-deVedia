@@ -8,29 +8,26 @@
 #212529
 */
 
+/* ----- Tipografías ----- */
+/*      Roboto: font-family: 'Roboto', sans-serif;       */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+
 /* ----- Reseteo ----- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-}
+}    
 
-/* ----- Tipografías ----- */
-
-
-.body {
-    /* background-color: #D7A561; */
-}
 
 /*      ------------ HEADER ------------      */
 
 .header {
     width: 100%;
-    /* margin-top: 20px; */
     min-height: 30vh;
     padding: 1rem 0;
-
 }
 
 /* LOGO */
