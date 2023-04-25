@@ -1,5 +1,6 @@
 /* ----- PALETA DE COLORES -----
 1.#ffffff
+#c0a073
 2. Título: #D7A561
 3. Texto:#100f0f
 4.#0a0a0a
@@ -134,6 +135,7 @@
 
 .index-container1 {
     /* margin: 20px; */
+    width: 100vw;
     margin: auto;
     padding-bottom: 40px;
     text-align: center;
@@ -427,9 +429,9 @@ iframe {
 /* c1-lista-sucursales */
 /* ul / li / a */
 
-/* DONDE ENCONTRARNOS: container 1 */
+/* DONDE ENCONTRARNOS: container 2 */
 .donde-encontrarnos-container2 {
-    width: 100%;
+    width: 100vw;
     text-align: center;
     margin: auto;
     /* margin-top: 40px; */
@@ -437,10 +439,10 @@ iframe {
     padding-bottom: 30px; */
     /* background-color: #c0a073; */
     /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
 }
 
@@ -455,7 +457,7 @@ iframe {
 .donde-encontrarnos-container2 p {
     width: 40vw;
     /* height: 20vw; */
-    margin: 20px 0x 10px 20px;
+    margin: 20px 40x 10px 20px;
     font-size: 14px;
     font-weight: 500;
     /* color: white; */
@@ -463,28 +465,22 @@ iframe {
     letter-spacing: 1px;
 }
 
+.c2-sucursales p{
+    margin: 60px 15px;
+}
+
 .donde-encontrarnos-container2 img {
-    margin: 20px 20px 40px 20px;
+    margin: 20px 20px 40px 10px;
     width: 50vw;
     height: 50vw;
     border-radius: 50%;
     /* margin: auto; */
 }
 
-.donde-encontrarnos-container2 hr {
-    width: 280px;
-    height: 3px;
-    margin: auto;
-    border-style: none;
-    /* background-color: #D7A561; */
-    /* background-image: linear-gradient( to left, black, grey); */
-    background-color: #DCD9D4;
-    /* background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
- background-blend-mode: soft-light,screen; */
-    /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
- background-blend-mode: multiply,multiply; */
-    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
-    background-blend-mode: normal, lighten, soft-light;
+.donde-encontrarnos-container2 iframe{
+    width: 90vw;
+    height: 90vw;
+
 }
 
 
@@ -497,21 +493,98 @@ iframe {
     align-items: center;
 }
 
-.c2-illum {}
+.c2-norrebro{
+    margin-top: 40px;
+}
+.c2-frederiksberg{
+    margin-top: 40px;
 
-.c2-illum iframe {}
+}
 
-.c2-illum img {}
+.c2-ostebro{
+    margin-top: 40px;
 
-.c2-illum p
+}
+.c2-vestebro{
+    margin-top: 40px;
+
+}
+
+/* grid sucursales */
+.c2-sucursales {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "map map"
+        "map map"
+        "foto horarios";
+}
+
+/* .sucursal {
+    grid-area: sucursal;
+    width: 90vw;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    /* margin-top: 20px; 
+    background-color: #B07F6E;
+} */
+
+.map {
+    grid-area: map;
+    width: 90vw;
+    height: 300px;
+
+
+}
+
+.foto {
+    grid-area: foto;
+    width: 50vw;
+    height: 50vw;
+
+}
+
+.horarios {
+    grid-area: horarios;
+    width: 40vw;
+    height: 50vw;
+
+
+}
+
+
+
+.donde-encontrarnos-container2 hr {
+    width: 280px;
+    height: 3px;
+    margin: auto;
+    margin-top: 80px;
+    border-style: none;
+    /* background-color: #D7A561; */
+    /* background-image: linear-gradient( to left, black, grey); */
+    background-color: #DCD9D4;
+    /* background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+  background-blend-mode: soft-light,screen; */
+    /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background-blend-mode: multiply,multiply; */
+    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;
 }
 
 c2-norrebro c2-frederiksberg c2-ostebro c2-vestebro
 /* SUSTENTABILIDAD: container # */
 
 .sustentabilidad-container1 {
-    width: 100%;
-    margin-bottom: 5px;
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 50px;
     text-align: center;
     background-color: #c0a073;
     display: flex;
@@ -523,7 +596,7 @@ c2-norrebro c2-frederiksberg c2-ostebro c2-vestebro
 }
 
 .c1-info-sustentabilidad {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .c1-info-sustentabilidad h1 {
@@ -535,7 +608,8 @@ c2-norrebro c2-frederiksberg c2-ostebro c2-vestebro
 }
 
 .c1-info-sustentabilidad p {
-    margin: 20px 20px 10px 20px;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
     font-weight: 400;
     /* text-align: justify; */
     letter-spacing: 1px;
@@ -564,8 +638,26 @@ c2-norrebro c2-frederiksberg c2-ostebro c2-vestebro
 }
 
 .c1-info-sustentabilidad a {
+    width: 150px;
+    margin: auto;
     font-size: 15px;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
 }
+
+.c1-info-sustentabilidad a:hover {
+    font-size: 15px;
+    padding: 20px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* grilla */
+
+
+
 
 /* CONTACTO: container 1 */
 
@@ -608,26 +700,93 @@ span {
 /* CONTACTO: container 2 */
 
 .contacto-container2 {
-    width: 100%;
+    width: 285px;
     margin: auto;
+    margin-bottom: 40px;
+    background-color: #c0a073;
+    border-radius: 5px;
+
     /* margin-bottom: 5px; */
     /* text-align: center; */
     /* background-color: #c0a073; */
+}
+
+.contacto-container2 p {
+    padding: 30px;
+    margin-bottom: 1px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /* margin-bottom: 20px; */
+
+}
+
+
+.ficha-contacto {
+    height: 400px;
+    width: 230px;
+    /* padding:30px; */
+    /* padding-left: 15px; */
+    margin: auto;
+    padding-bottom: 30px;
+    /* margin-top: 10px; */
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+
 }
 
-.ficha-contacto {
-    margin: auto;
+.text-consulta {
+    width: 216px;
+    padding: 0 10px 10px 10px;
 }
+
+
+
+.input-contact {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #d2cec8;
+    border-radius: 5px;
+    font-family: calibri;
+    font-size: 16px;
+    /* color: white; */
+    /* opacity: .7; */
+    border: 2px solid #6f5f4a;
+}
+
 
 form input:focus {
-    background-color: #eee4b7;
+    background-color: white;
     transform: scale(1.05);
+    border: 1px solid #1f1e1e;
+
+}
+
+.submit-button {
+    width: 80px;
+    height: 35px;
+    /* padding: 16px; */
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    border: 1px solid #1f1e1e;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    /* box-shadow: 4px 4px 4px grey; */
+    box-shadow: 2px 2px 4px rgb(51, 51, 51);
+
+
 }
 
 /* botón */
@@ -654,26 +813,27 @@ form input:focus {
     background-color: ;
 } */
 
-.button {
-    min-width: 80px;
-    height: 25px;
+/* .button {
+    width: 250px;
+    font-size: 14px;
+    height: 50px;
     color: #3b3f42;
     padding: 0px 10px;
     /* font-weight: bold; */
-    font-size: 12px;
-    cursor: pointer;
-    /* transition: all 0.3s ease; */
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 10px;
-    border: 2px solid #495057;
-    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
-    box-shadow: 2px 2px 4px rgb(51, 51, 51);
+font-size: 12px;
+cursor: pointer;
+/* transition: all 0.3s ease; */
+position: relative;
+display: inline-block;
+outline: none;
+border-radius: 10px;
+border: 2px solid #495057;
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+box-shadow: 2px 2px 4px rgb(51, 51, 51);
 }
 
-.button:hover {
-    background: #f7f4f4;
+*/ .submit-button:hover {
+    /* background: #f7f4f4; */
     color: #2c2c2c;
     font-size: 13px;
     /* font-weight: bold; */
@@ -728,7 +888,8 @@ transition: 2s transform;
 /*      ------------ MOBILE FIRST - MEDIA QUERIES ------------      */
 
 @media (min-width: 425px) {
-/* page: index - C1 */
+
+    /* page: index - C1 */
     .index-container1 img {
         height: 100vh;
         width: 100vw;
@@ -736,26 +897,28 @@ transition: 2s transform;
         /* Overflow: hidden; */
     }
 
-/* page: index - C2 */
+    /* page: index - C2 */
     .index-container2 {
         width: 80vw;
         margin-left: 30vw;
         margin-right: 30vw;
         justify-content: space-evenly
     }
-/* page: nuestro cafe */
-    .c1-video iframe{
+
+    /* page: nuestro cafe */
+    .c1-video iframe {
         width: 425px;
         height: 532.36px;
     }
 
-    .c1-casa p{
+    .c1-casa p {
         width: 70vw;
     }
 }
 
 
 @media (min-width: 1024px) {
+
     /* header y nav */
     .navbar .container {
         /* flex-wrap: wrap; */
@@ -830,7 +993,99 @@ transition: 2s transform;
         padding: 30px;
     }
 
-/* page: nuestro cafe */
+    /* page: nuestro cafe */
 
 
+
+    /* page: donde encontrarnos */
+
+    .c2-sucursales {
+        /* background-color: #9D9EA3; */
+        margin: 0 30px;
+        display: grid;
+        align-items: start;
+        justify-items: stretch;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            /* "map map" */
+            "map foto"
+            "map horarios";
+    }
+
+    /* .sucursal {
+        grid-area: sucursal;
+    } */
+
+    .map {
+        grid-area: map;
+        width: 50vw;
+        height: 30vw;
+        margin-left: 50px;
+
+    }
+
+    .foto {
+        grid-area: foto;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .horarios {
+        grid-area: horarios;
+        /* width: 30vw; */
+        height: 10vw;
+    }
+    
+    .donde-encontrarnos-container2 img {
+        width: 25vw;
+        height: 25vw;
+margin: auto;
+margin-top: 50px;
+    }
+    .donde-encontrarnos-container2 h3{
+        font-size: 25px;
+
+    }
+
+    .donde-encontrarnos-container2 p{
+        font-size: 20px;
+        text-align: left;
+        margin: 35px;
+    }
+    .donde-encontrarnos-container2 iframe{
+        width: 50vw;
+        height: 50vw;
+
+    }
+
+    .donde-encontrarnos-container2 hr{
+        margin-top: 1px;
+    }
+
+    .c2-sucursales p{
+        /* margin: 60px 15px; */
+        font-size: 20px;
+    }
+
+    .c2-norrebro{
+        margin-top: 0px;
+    }
+    .c2-frederiksberg{
+        margin-top: 0px;
+    
+    }
+    
+    .c2-ostebro{
+        margin-top: 0px;
+    
+    }
+    .c2-vestebro{
+        margin-top: 0px;
+    
+    }
+    
 }

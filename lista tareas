@@ -1,8 +1,7 @@
-footer (estilo e iconos(pf5))
 acomodar y dar estilo a formulario
 page donde encontrarnos: mapas y fotos(grid)
-responsive: mobilefirst y @media
+page nuestro cafe: grid (@media) en tipos de cafe
+responsive: mobilefirst y @media de algún otra página
 animaciones tipos cafe y slide fotos en alguna page
-tipos cafe grilla para responsive
-nav desplegable
 en todos los input va el name? tendria q agregar en ese cadso. y llevan id?
+github
